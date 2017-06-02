@@ -1,0 +1,33 @@
+ <ion-header-bar>
+<div data-role="page" class="inner_page profile_page" id="discover">
+<header>
+<div class="back"><a href="#setting"><img src="img/set.png" alt=""></a></div>
+<h4 class="">Discover</h4>
+<div class="notfi" ng-click="notification_page()"><img src="img/noti.png" alt=""> <span>3</span></div>
+</header> 
+</div>
+ </ion-header-bar>
+
+<ion-content>
+<div data-role="page" class="inner_page profile_page" id="discover">
+ 
+
+<div class="inner_content pro_content">
+<div class="discover_sec" ng-repeat="res in matchDataRes">
+	<div class="discover_item" uid="{{res.id}}" data-name="{{res.name}}">
+ <div class="close_dis_item"><img src="img/close.png" alt=""></div>
+ <div class="discover_img_sec"> 
+  <img src="{{res.image_url}}" alt="">
+   </div>
+    <div class="discover_bottom">
+    <div class="discover_name"><h4>{{res.name}}</h4></div>
+      <div class="check_disc"></div>
+      </div>
+      </div>
+</div><!-- discover_sec -->
+
+<a href="one-one-chat.html"  rel="external" class="chat_btn"  id="onechat"> <img src="img/002-note.png" alt=""> Start One-One Chat</a>
+
+</div><!-- pro_content -->
+ </div><!-- add_interest -->
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-content>
+    <div data-role="page" class="inner_page" id="add_interest">
+        <header>
+            <div class="back"><img src="img/back.png" alt=""></div>
+            <h4>Add Interest</h4>
+        </header>
+        <div class="inner_content">
+            <ul id="interest-type">
+                <li ng-repeat="interests in interest[0]" data-id="{{interests.interest_id}}" data-q="{{interests.question}}">
+                    <a><img src="{{interests.interest_image}}" /><img src="{{interests.interest_image2}}" />
+                        <h4>{{interests.interest_name}}</h4></a>
+                </li>
+            </ul>
+        </div>
+       
+   
+</ion-content>
+ 
+

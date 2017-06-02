@@ -1,0 +1,41 @@
+ <ion-header-bar>
+<div data-role="page" class="inner_page profile_page" id="profile">
+<header>
+<div class="back"><a href="#setting"><img src="img/set.png" alt=""></a></div>
+<h4 class="username">Add Interest</h4>
+<div class="notfi" ng-click="notification_page()"><img src="img/noti.png" alt=""> <span>3</span></div>
+</header>
+</div>
+</ion-header-bar>
+<ion-content>
+<div data-role="page" class="inner_page profile_page" id="profile">
+
+<div class="slide_pro">
+<div class="item" ng-repeat="data in prfoledata"><div class="img_sc" style="background:url({{data.image_url}})" ></div></div>
+</div><!-- slide_pro -->
+
+<div class="inner_content pro_content">
+<h4 class="pro_age">Age <span>20 YEARS</span></h4>
+<div class="discr">
+<h4>DESCRIPTION</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse fugiat aspernatur error dolorum numquam voluptas dolorem, possimus quia aut mollitia enim. Labore dolore, laboriosam ducimus quibusdam libero dignissimos assumenda.</p>
+</div><!-- discr -->
+
+<div class="myInterest">
+<h4>INTERESTS</h4>
+ <div class="list_interest" >
+ <div class="list_int" ng-repeat="interests in profileInterest">
+<img src="img/write.png" class="write" alt="">
+<div class="img_lst"><img src="{{interests.interest_image}}" alt=""></div>
+<div class="cont_lst">
+<h4>{{interests.question}}</h4>
+<p>{{interests.answer}}</p>
+</div></div>
+
+ </div>
+</div><!-- discr -->
+</div><!-- pro_content -->
+ 
+</div><!-- add_interest -->
+
+</ion-content>
